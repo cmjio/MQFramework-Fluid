@@ -1,0 +1,164 @@
+/*
+—————————————————————————————————————————––––––––
+Base:MQFramework Fluid by Chris Johnson
+—————————————————————————————————————————––––––––
+MQFramework is a responsive "snap" web framework
+that will degrade from wide-screen monitors all
+the way down to mobile devices. It uses 
+"media-queries" which can be found within the 
+CSS3 specification.
+
+*/
+body{margin:0px 20px;}
+.container { max-width:1120px;padding:0px 10px;
+	margin:0 auto; }
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12 {float:left;
+	margin:0 1.754% 0 0;}
+
+.row{	
+	max-width:1140px;
+	clear:both;
+	margin:0 0 0 -1.754%;
+	list-style:none; /* So we can make grids out of lists. */
+	overflow:hidden; /* Clear the floats */
+}
+			
+.row [class^="grid_"]{
+			margin:0 0 0 1.754%;
+}
+
+.container .grid_1 { width:6.579%; }
+.container .grid_2 { width:14.912%; }
+.container .grid_3 { width:23.246% }
+.container .grid_4 { width:31.579% }
+.container .grid_5 { width:39.912% }
+.container .grid_6 { width:48.246% }
+.container .grid_7 { width:56.579% }
+.container .grid_8 { width:64.912% }
+.container .grid_9 { width:73.246% }
+.container .grid_10 { width:81.579% }
+.container .grid_11 { width:89.912% }
+.container .grid_12 { width:98.246%; }
+
+.mobile-only{display:none;}
+.ipad-only{display:none;}
+.desktop-only{display:inline;}
+.desktop-only-alt{display:block;}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+	position:relative;
+}
+
+.container .prefix_1 { padding-left:8.333%; }
+.container .prefix_2 { padding-left:16.667%; }
+.container .prefix_3 { padding-left:25%; }
+.container .prefix_4 { padding-left:33.333%; }
+.container .prefix_5 { padding-left:41.667%; }
+.container .prefix_6 { padding-left:50%; }
+.container .prefix_7 { padding-left:58.333%; }
+.container .prefix_8 { padding-left:66.667%; }
+.container .prefix_9 { padding-left:75%; }
+.container .prefix_10 { padding-left:83.333%; }
+.container .prefix_11 { padding-left:91.667%; }
+
+.container .push_1 { left:8.333%; }
+.container .push_2 { left:16.667%; }
+.container .push_3 { left:25%; }
+.container .push_4 { left:33.333%; }
+.container .push_5 { left:41.667%; }
+.container .push_6 { left:50%; }
+.container .push_7 { left:58.333%; }
+.container .push_8 { left:66.667%; }
+.container .push_9 { left:75%; }
+.container .push_10 { left:83.333%; }
+.container .push_11 { left:91.667%; }
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.container{max-width:280px;}
+	.container .grid_1,.container .grid_2,.container .grid_3,.container .grid_4,.container .grid_5,.container .grid_6,.container .grid_7,.container .grid_8,.container .grid_9,.container .grid_10,.container .grid_11,.container .grid_12 { width:100%;display:block;float:none;position:relative;margin-left:0px;margin-right:0px; }
+	.mobile-only{display:block;}
+	.desktop-only{display:none;}
+	
+	.container .prefix_1 { padding-left:0; }
+	.container .prefix_2 { padding-left:0; }
+	.container .prefix_3 { padding-left:0; }
+	.container .prefix_4 { padding-left:0; }
+	.container .prefix_5 { padding-left:0; }
+	.container .prefix_6 { padding-left:0; }
+	.container .prefix_7 { padding-left:0; }
+	.container .prefix_8 { padding-left:0; }
+	.container .prefix_9 { padding-left:0; }
+	.container .prefix_10 { padding-left:0; }
+	.container .prefix_11 { padding-left:0; }
+	
+	.container .push_1 { left:0; }
+	.container .push_2 { left:0; }
+	.container .push_3 { left:0; }
+	.container .push_4 { left:0; }
+	.container .push_5 { left:0; }
+	.container .push_6 { left:0; }
+	.container .push_7 { left:0; }
+	.container .push_8 { left:0; }
+	.container .push_9 { left:0; }
+	.container .push_10 { left:0; }
+	.container .push_11 { left:0; }
+}
+@media print{
+	body{width:95%;}
+}
+
+.margin_top_5 { margin-top:5px !important; }
+.margin_top_15 { margin-top:15px !important; }
+.margin_top_25 { margin-top:25px !important; }
+.margin_top_30 { margin-top:30px !important; }
+.margin_top_35 { margin-top:35px !important; }
+.margin_top_45 { margin-top:45px !important; }
+.margin_top_60 { margin-top:60px !important; }
+.margin_top_90 { margin-top:90px !important; }
+.margin_top_120 { margin-top:120px !important; }
+
+.margin_bottom_5 { margin-bottom:5px !important; }
+.margin_bottom_15 { margin-bottom:15px !important; }
+.margin_bottom_25 { margin-bottom:25px !important; }
+.margin_bottom_30 { margin-bottom:30px !important; }
+.margin_bottom_35 { margin-bottom:35px !important; }
+.margin_bottom_45 { margin-bottom:45px !important; }
+.margin_bottom_60 { margin-bottom:60px !important; }
+.margin_bottom_90 { margin-bottom:90px !important; }
+.margin_bottom_120 { margin-bottom:120px !important; }
+
+.padding_top_15 { padding-top:15px !important; }
+.padding_top_30 { padding-top:30px !important; }
+.padding_top_45 { padding-top:45px !important; }
+.padding_top_60 { padding-top:60px !important; }
+.padding_top_90 { padding-top:90px !important; }
+.padding_top_120 { padding-top:120px !important; }
+.padding_top_130 { padding-top:130px !important; }
+
+.padding_bottom_15 { padding-bottom:15px !important; }
+.padding_bottom_30 { padding-bottom:30px !important; }
+.padding_bottom_45 { padding-bottom:45px !important; }
+.padding_bottom_60 { padding-bottom:60px !important; }
+.padding_bottom_90 { padding-bottom:90px !important; }
+.padding_bottom_120 { padding-bottom:120px !important; }
+.padding_bottom_130 { padding-bottom:130px !important; }
+
+.clear { clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0; }
+.clearfix:before,
+.clearfix:after { content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+
